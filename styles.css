@@ -1,0 +1,347 @@
+/* ------------------------------------------------------
+  Stylesheet Guide
+  ------------------------------------------------------
+
+  I went off the suggested outline and chose to sort the selectors in my stylesheet using their order of 
+  appearance and grouping by elements as it seemed to already be. For example, those that impact the whole 
+  document come first, then I style the header, and so on down the page. The outline is provided to find 
+  the different sections easily :). 
+
+
+    1. Global
+        1.1. Fonts
+            1.1.1. Header font - Indie Flower
+            1.1.2. Text font - Indie Flower
+        1.2. General styles
+        1.3. Color scheme
+        1.4  Logo 
+    2. Header
+    3. Sections
+        3.1 Table
+        3.2 Form
+        3.3 Map
+    4. Footer
+ 
+
+------------------------------------------------------ */
+
+/* ------------------------------------------------------
+    1. Global
+------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+        1.1. Fonts
+    ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.1.1. Header font - Indie Flower
+        ------------------------------------------------------ */
+			
+			/* https://css-tricks.com/snippets/css/using-font-face/ */
+           
+
+			@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+            h1 {
+                font-family: 'Indie Flower', cursive;
+            }
+
+		/* ------------------------------------------------------
+            1.1.2. Text font - Indie Flower
+        ------------------------------------------------------ */
+
+        body {
+            font-family: 'Indie Flower', cursive;
+            font-size: 90%;
+            color: #666;
+            background-color: #f8f8f8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+    /* ------------------------------------------------------
+        1.2. General styles
+    ------------------------------------------------------ */
+
+    #page {
+        max-width: 940px;
+        min-width: 720px;
+        margin: 10px auto 10px auto;
+        border: 4px  #000;
+        background-color: #ffffff;
+        vertical-align: baseline;
+    }
+
+
+    .center-mid-1{
+        width: 940px;
+        background-color: #dac0d8;
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    .center-mid-2{
+        width: 940px;
+        background-color: #efeae6;
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    .center-mid-3{
+        width: 940px;
+        background-color: #efeae6;
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    .center-2{
+        width: 940px;
+        margin: auto;
+        padding-bottom: 15px;
+        padding-top: 5px;
+    }
+    
+    .center-3{
+        width: 300px;
+        margin: 0 0;
+    }
+
+    .img-1{
+        margin: auto;
+        margin-top: 0;
+        width: 100%;
+    }
+    .img-2{
+        margin: auto;
+        height: 200px; 
+        width: auto; 
+        overflow:hidden; 
+        padding-left: 7.5px;
+    }
+
+    #unique-image {
+        padding-left: 0px;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+    .center-2>h1, .center-2>p{
+        text-align: center;
+    }
+    
+    h1.center-text
+    {
+        font-size: 550%;
+        margin-bottom: 0;
+    }
+    }
+    
+    
+    .menu-holder {
+        float: right;
+        max-width: 80%;
+        position: fixed;
+        text-align: center;
+        height: 100%;
+        background-color: #dac0d8;
+        right: -100%;
+        top: 0;
+        transition: right .3s ease;
+        width: 100%;
+        overflow: auto;
+        max-width: 100%;
+        z-index: 99;
+    }     
+
+    ul {
+        position: fixed;
+        background: #ce9cc5;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        display: inline;
+        padding: 10px;
+        float: right;
+    }
+
+    ul li a, 
+    ul a :hover, 
+    ul li a:focus, 
+    ul li a:active {
+        border: none;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    li {
+        list-style-image: url("images/icon-plus.png");
+        line-height: 1.6em;
+    }
+
+
+
+    /* ------------------------------------------------------
+        1.3. Color scheme
+    ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.3.1. Lightest (#ebdbeb) - Color scheme
+        ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.3.2. Second lightest (#dac0d8) - Color scheme
+        ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.3.3. Medium (#ce9cc5) - Color scheme
+        ------------------------------------------------------ */
+
+        /*------------------------------------------------------
+            1.3.4. Darker (#cb8bc3) - Color scheme
+        ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.3.5. Darkest (#b577ad) - Color scheme
+        ------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+              1.4 Logo Sizing
+    ------------------------------------------------------ */
+
+            .smlogo {
+                height: 96px;
+            }
+
+           
+
+/* ------------------------------------------------------
+    2. Header 
+------------------------------------------------------ */
+    nav {
+        background-color: #dac0d8;
+    }
+
+    
+
+/* ----------------------------------------------------
+    3. Sections
+    --------------------------------------------------- */
+
+    /* ----------------------------------------------------
+            3.1 Table Elements
+    --------------------------------------------------- */
+
+       table {
+            border-spacing: 0px;}
+        th, td {
+            padding: 5px 30px 5px 10px;
+            border-spacing: 0px;
+            font-size: 90%;
+            margin: 0px;}
+        th, td {
+            text-align: left;
+            background-color: #ce9cc5; 
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;}
+        tr.head th {
+            color: #fff;
+            background-color: #b577ad; 
+            border-bottom: 2px solid #fff;
+            border-right: 1px solid #fff;
+            border-top: 1px solid #fff;
+            text-align: center;
+            text-shadow: -1px -1px 1px #666666;
+            letter-spacing: 0.15em;}
+        td {
+            text-shadow: 1px 1px 1px #ffffff;}
+        tr.even td, tr.even th {
+            background-color: #dac0d8;  }
+        tr.head th:first-child {
+            -webkit-border-top-left-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            border-top-left-radius: 5px;}
+        tr.head th:last-child {
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-right-radius: 5px;}
+
+
+ /* ----------------------------------------------------
+            3.2 Form Elements
+    --------------------------------------------------- */
+        fieldset {
+            width: 310px;
+            margin-top: 20px;
+            border: 1px solid #d6d6d6;
+            background-color: #ffffff;
+            line-height: 1.6em;
+            margin: auto;
+            text-align: center;
+        }
+        legend {
+            font-style: italic;
+            color: #666666;}
+        input[type="text"] {
+            width: 120px;
+            border: 1px solid #d6d6d6;
+            padding: 2px;
+            outline: none;}
+        input[type="text"]:focus,
+        input[type="text"]:hover {
+            background-color: #d0e2f0;
+            border: 1px solid #999999;}
+        input[type="submit"] {
+            border: 1px solid #006633;
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-right: auto;
+            text-align: center;
+        }
+        input[type="submit"]:hover {
+            border: 1px solid #006633;
+            background-color: #00CC33;
+            color: #ffffff;
+            cursor: pointer;}
+        .title {
+            float: left;
+            width: 160px;
+            clear: left;}
+        .submit {
+            width: 310px;
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+
+    /* ----------------------------------------------------
+            3.3 Maps
+    --------------------------------------------------- */
+
+        iframe {
+            text-align: center;
+            display: block;
+            margin: auto;
+
+        }
+
+    /* ----------------------------------------------------
+    4. Footer
+    --------------------------------------------------- */
+
+    .footer{
+        text-align: center;      
+        margin: auto;
+        padding: 2.5px;
+    }
+
