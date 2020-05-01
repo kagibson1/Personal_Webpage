@@ -1,88 +1,75 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Kellen's personal website</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">		
-	</head>
-	<body>
-		<div id="page">
-			<!--same way to navigate on all the pages, creates the nav bar at the top  -->
-			<div class="menu-holder">
-                <nav id="header-main-menu">
-                    <ul class="main-menu ">
-                         <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                         <li>
-                            <a href="activities.html">Activities</a>
-                        </li>
-                         <li>
-                            <a href="schedule.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Home</a>                            
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-         <br/>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#563d7c">
 
-		<h1 class= "center-text"> My Campus Activities </h1>
-		<br/>	
-		
-		<!--images of my activities -->
-		<div class = "center-mid-1">
-			<h2 class="center-text">An overview of my activities</h4>
-			<p class="center-text">
-				<img class ="img-2" src="images/pool.jpg" alt="Swimming pool with friend" title="Swimming pool with friend" style="height: 200px; width: auto; overflow:hidden;" />
-				<img class ="img-2" src="images/ems.jpg" alt="EMS vehicle" title="First Day of School" style="height: 200px; width: auto; overflow:hidden; padding-left: 7.5px" />
-				<img class ="img-2" src="images/firstday-dg.jpg" alt="DG house smiling" title="Sophomore Year Smiles" style="height: 200px; width: auto; overflow:hidden; padding-left: 7.5px" />
-			</p>
-	   </div>
-		</div>
+   
+    <title>Activities Page</title>
 
-		<!--video of me competing -->
-		<div id = "swim-section" class="center-mid-2" style="text-align: center; margin: auto"> 
-			<h2 class="center-text">Swimming</h2>
-			<video width="480" height="320" style="margin-right: auto; text-align: center;" controls="controls">
-			<source src="images/swimmingvideo.mp4" type="video/mp4">
-			</video>
-			<figcaption>Here's a clip of me swimming the 500 yard freestyle at our most recent meet, against Johns Hopkins. I had the fourth fastest time out of 12 swimmers between two heats, at 5 minutes, 16 seconds, a season-best time.</figcaption>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/product/">
 
-		</div>
+    <!-- Bootstrap core CSS -->
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+        <link href="contact_styles.css" rel="stylesheet"> 
+  </head>
+  <body>
 
 
-		<!--image and description of EMS -->
-		<div id = "ems-section" class="center-mid-2" style="text-align: center; margin: auto"> 
-			<h2 class="center-text">EMS</h2>
-			<figure><img src="images/EMSlogo.png"></figure>
-			<figcaption>I am involved in CMU EMS, a student-run and volunteer Emergency Medical Service.</figcaption>
-		</div>
 
-		<!--description and image of DG -->
-		<div id = "dg-section" class="center-mid-2" style="text-align: center; margin: auto"> 
-			<h2 class="center-text">Delta Gamma Beta Nu</h2>
-			<figure><img src="images/recruitment.jpg" style="width: 400px;"></figure>
-			<figcaption>I am involved in Delta Gamma Beta Nu where from 2018-2020 I served as Director of Delta Gamma Dialogues and from 2020 on I am on the Communications Committee within the chapter.</figcaption>
+        <header>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="index.html" style="color: white;">Kellen Gibson</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html" style="color: white;">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="courses.html"style="color: white;">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link currp" href="activities.html"style="color: white;">Activities</a>
+        </li>
+          <li class="nav-item ">
+          <a class="nav-link" href="contact.html"style="color: white;">Contact</a>
+        </li>
+         <li class="nav-item ">
+          <a class="nav-link" href="photos.html"style="color: white;">Photos</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+</header>
 
-		</div>
+  </div> 
+</nav>
 
-		<!--same footer that links to social media pages -->
-	<footer class="footer">
-                 <div>
-                     <p> © 2020 </p>
-                   <div class="socialmedia"> 
-                        <a href="https://twitter.com/kellen_gibson6">
-                            <span class="twitter"> <img class= "smlogo" src="images/f081.png"/></span>
-                        </a> 
-                        <a href="https://www.instagram.com/kellen.gibson/">
-                            <span class="insta"> <img class= "smlogo" src="images/instagram.jpg"/></span>
-                        </a> 
-                        <a href="https://www.linkedin.com/in/kellen-gibson">
-                            <span class="linkedin"> <img class= "smlogo" src="images/linkedin.png"/> </span>
-                        </a> 
-                    </div>
-                </div>
-            </footer>
-	</body>
+
+
+
+<main role="main" class="text-center">
+    <h1>See my complete resume below!</h1>
+  
+    <p class="lead">Download the resume, or view images on the <a href = "photos.html" style="color: black"> <b> photo page! </b></a></p>
+
+  </main>
+
+
+<div id = "resume" style="text-align: center">
+ <embed src="KellenGibsonResume.pdf" type="application/pdf" width="75%" height="600px" />
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>

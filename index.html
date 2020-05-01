@@ -1,134 +1,121 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title> Kellen's personal website </title>
-		<!--tags to help with search engines -->
-		<meta charset="UTF-8">
-		<meta name = "description" content="Description beyond resume, personal website">
-		<meta name = "keywords" content="Kellen, Gibson, resume, Computer, Science">
-		<meta name = "robots" content = "nofollow" >
-		<meta http-equiv ="author" content="Kellen Gibson">
-		<meta http-equiv="pragma" content="no-cache">
-		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-    	<style type="text/css">
-			
-			@media screen and (min-width: 641px) and (max-width: 1024px)
-			 {
-			* {
-				background: #FFE6eE;
-			}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-			.center-mid-1{
-       			width: 100%;
-       		}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-       		.center-mid-2{
-       			width: 100%;
-       		}
+    <title>Kellen's Website</title>
 
-       		h1.center-text{
-       			font-size: 250%;
-       		}
-}
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-       		@media screen and (max-width: 640px) {
-			* {
-				background: #FFFFFF;
-			}
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-			.center-mid-1{
-       			width: 100%;
-       		}
+      body{
+      background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url("images/dg-family.jpg") center;
 
-       		.center-mid-2{
-       			width: 100%;
-       		}
-
-       		h1.center-text{
-       			font-size: 150%;
-       		}
-
-       		img {
-       			display: none;
-       		}
-
-		}
+    }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
 
 
-		</style>
+  <body>
+
     
-    
-    
-	</head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">Kellen Gibson</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+         <a class="nav-link" href="courses.html">Courses</a>
+        <a class="nav-link" href="activities.html">Activities</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="photos.html">Photos</a>
+      </nav>
+    </div>
+  </header>
 
-	<body>
-		<div id="page">
-			<!--same menu that links around to the different pages -->
-			<div class="menu-holder">
-                <nav id="header-main-menu">
-                    <ul class="main-menu ">
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                         <li>
-                            <a href="activities.html">Activities</a>
-                        </li>
-                         <li>
-                            <a href="schedule.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Home</a>                            
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-         <br/>
-
-		<h1 class= "center-text" style="font-family: 'Indie Flower', cursive;"> Kellen Gibson </h1>
-		<br/>
-		<figure>
-			<!-- intro to me! with a picture and description -->
-			<img class ="img-1" src="images/dg-pic.jpg" alt="Picture of Kellen Gibson" title="Kellen Gibson profile picture" style="border-radius:50%; height:250px; width: auto; display: block; margin-left: auto, margin-right: auto; margin-top: auto;" />
-			<p>
-				<figcaption>
-					<h2 class = "center-text" style =" font-family: 'Indie Flower', cursive; "> Welcome :) </h2>
-					<p class ="center-text " style="font-family: 'Indie Flower', cursive;">
-					My name is Kellen Gibson and I'm a sophomore Computer Science and Computational Biology student at Carnegie Mellon University. My passion is integrating Computer Science into Biology to improve health care technology. I'm currently studying Computational Biology theory and an introductory Computer Systems course. On this site you can find more information about me, what I do, and get in touch with me. 
-				</p>
-				</figcaption>
-			</p>
-		</figure>
-		
-		<!--preview of activities -->
-		<div class = "center-mid-1">
-			<h4 class="center-text">An overview of my activities</h4>
-			<p class="center-text">
-				<img class ="img-2" id = "unique-image" src="images/pool.jpg" alt="Swimming pool with friend" title="Swimming pool with friend"  />
-				<img class ="img-2" src="images/ems.jpg" alt="EMS vehicle" title="First Day of School" />
-				<img class ="img-2" src="images/firstday-dg.jpg" alt="DG house smiling" title="Sophomore Year Smiles" />
-			</p>
-	   </div>
-	</div>
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Hi! Welcome to my webpage.</h1>
+    <p class="lead">Come check out everything I'm working on right now!</p>
+    <p class="lead">
+      <a href="courses.html" class="btn btn-lg btn-secondary">Learn more</a>
+    </p>
+  </main>
 
 
-	<!-- footer that links to the different social medias -->
-	<footer class="footer">
-                 <div>
-                     <p> © 2020 </p>
-                    <div class="socialmedia"> 
-                        <a href="https://twitter.com/kellen_gibson6">
-                            <span class="twitter"> <img class= "smlogo" src="images/f081.png"/></span>
-                        </a> 
-                        <a href="https://www.instagram.com/kellen.gibson/">
-                            <span class="insta"> <img class= "smlogo" src="images/instagram.jpg"/></span>
-                        </a> 
-                        <a href="https://www.linkedin.com/in/kellen-gibson">
-                            <span class="linkedin"> <img class= "smlogo" src="images/linkedin.png"/> </span>
-                        </a> 
-                    </div>
-                </div>
-            </footer>
-	</body>
+<footer class="container py-1 footer">
+  <div class="row">
+    <div class="col-12 col-md">
+    <h5> <a href="#">Home </a></h5>
+     <p> Kellen Gibson </p>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a href="courses.html">Courses</a></h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="courses.html">Spring 2020</a></li>
+        <li><a class="text-muted" href="courses.html">Upcoming</a></li>
+        <li><a class="text-muted" href="courses.html">Previous</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a href="activities.html">Activities</a></h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="activities.html">EMS</a></li>
+        <li><a class="text-muted" href="activities.html">Swimming</a></li>
+        <li><a class="text-muted" href="activities.html">Delta Gam</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a href="contact.html">Contact</a></h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="contact.html">Location</a></li>
+        <li><a class="text-muted" href="contact.html">Social</a></li>
+        <li><a class="text-muted" href="contact.html">Other</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a href="photos.html">Photos</a></h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="photos.html">CMU</a></li>
+        <li><a class="text-muted" href="photos.html">Seattle</a></li>
+        <li><a class="text-muted" href="photos.html">Travel</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+
 </html>

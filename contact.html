@@ -1,1 +1,169 @@
-<!DOCTYPE html><html>	<head>		<title>Contact</title>			<link rel="stylesheet" type="text/css" href="styles.css">	</head>	<body>	<div id="page">			<div class="menu-holder">				<!--Same menu on each of the pages to navigate around -->                <nav id="header-main-menu">                    <ul class="main-menu ">                        <li>                            <a href="contact.html">Contact</a>                        </li>                        <li>                            <a href="activities.html">Activities</a>                        </li>                        <li>                            <a href="schedule.html">Courses</a>                        </li>                        <li>                            <a href="index.html">Home</a>                                                    </li>                    </ul>                </nav>            </div>         <br/>		<h1 class= "center-text"> Contact Me! </h1>			<!-- Form for user to contact, using the input, method get -->		<div class = "center-mid-3" id = "my-form">			<form action="http://www.example.com/form.php" method="get">				<fieldset>					<legend class = "center-3">Let's Get in Touch</legend>					<p><label class="title" for="name">Your name:</label>						 <input type="text" name="name" id="name"><br />						 <label class="title" for="email">Your email:</label>						 <input type="text" name="email" id="email"></p>					<span class="title">Message</span>					<textarea id="subject" name="subject" placeholder="Write a message..." style="height:200px width: 400px"></textarea>				</fieldset>	 	    <div class="submit"><input type="submit" value="Submit" /></div>			</form>		</div>		<!--map to show location, set to Gates which is where I did most of this project -->		<div class = "map">			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.427708312013!2d-79.94667054905967!3d40.44366956182329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f22177d9f8ef%3A0x719357c7895d25a8!2sGates%20and%20Hillman%20Centers!5e0!3m2!1sen!2sus!4v1580733691935!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>		</div>		<!--Social media footer on all the pages, links to social media accounts by clicking on the images -->	<footer class="footer">            <div>                 <p> © 2020 </p>                <div class="socialmedia">                     <a href="https://twitter.com/kellen_gibson6">                        <span class="twitter"> <img class= "smlogo" src="images/f081.png"/></span>                    </a>                     <a href="https://www.instagram.com/kellen.gibson/">                        <span class="insta"> <img class= "smlogo" src="images/instagram.jpg"/></span>                    </a>                     <a href="https://www.linkedin.com/in/kellen-gibson">                        <span class="linkedin"> <img class= "smlogo" src="images/linkedin.png"/> </span>                    </a>                 </div>            </div>        </footer>	</div>	</body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Kellen's Website</title>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      body{
+      background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url("images/gates.jpg") center;
+
+    }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="contact_styles.css" rel="stylesheet"> 
+  </head>
+
+
+  <body>
+
+    
+       <header>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="index.html" style="color: white;">Kellen Gibson</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html" style="color: white;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html"style="color: white;">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="activities.html"style="color: white;">Activities</a>
+        </li>
+          <li class="nav-item ">
+          <a class="nav-link currp" href="contact.html"style="color: white;">Contact</a>
+        </li>
+         <li class="nav-item ">
+          <a class="nav-link" href="photos.html"style="color: white;">Photos</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+</header>
+
+
+
+ 
+
+<main role="main">
+
+	
+	<br>
+		<!--- CLIENT DETAILS -->
+<!-- Contact Us Section -->
+<div id ="ctct">
+        <section class="Material-contact-section section-padding section-dark">
+          <div class="container" id = "formDiv">
+              <div class="row">
+                  <!-- Section Titile -->
+                  <div class="col-md-12">
+                      <h1 class="section-title"> Let's Get in Touch! </h1>
+                  </div>
+              </div>
+              <div class="row">
+                  <!-- Section Titile -->
+                  <div class="col-md-6 mt-3" >
+                    <h3>Thanks for navigating to my webpage and feel free to reach out.</h3> 
+
+                	<p>My passion is integrating Computer Science into Biology to improve health care technology. I'm currently studying Computational Biology theory and an introductory Computer Systems course. On this site you can find more information about me, what I do, and get in touch with me.</p>
+                    
+                   
+                      <p>If you have any problems or further questions or concerns that cannot be captured by the form, 
+                      please contact me directly, via email at kagibson@andrew.cmu.edu. </p>
+    
+                    <div>
+                     <a href="https://cmu.edu">Carnegie Mellon Webpage</a>
+                    </div>
+                       
+                    <div>
+                      Address:  <a href="#">5000 Forbes Avenue</a>
+                    </div>
+                    
+                  </div>
+                  <!-- contact form -->
+                  <div class="col-md-6">
+                      <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                          <!-- Name -->
+                          <div class="form-group label-floating">
+                            <label class="control-label" for="name">Name</label>
+                            <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                          <!-- email -->
+                          <div class="form-group label-floating">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                          <!-- Subject -->
+                          <div class="form-group label-floating">
+                            <label class="control-label">Subject</label>
+                            <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                          <!-- Message -->
+                          <div class="form-group label-floating">
+                              <label for="message" class="control-label">Message</label>
+                              <textarea class="form-control" rows="4" id="message" name="message" required data-error="Write your message"></textarea>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                          <!-- Form Submit -->
+                          <div class="form-submit mt-5">
+                              <button class="btn btn-common" type="submit" id="form-submit" style="background-color: #b00000">Send Message</button>
+                              <div id="msgSubmit" class="h3 text-center hidden"></div>
+                              <div class="clearfix"></div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </section>
+ </div>
+
+
+   
+<br />
+
+</main>
+		
+
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
